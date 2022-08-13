@@ -6,7 +6,7 @@ Seçilen ilin 7 günlük tahmini hava durumunu verir.
 
 Hava durumu bilgilerini [www.weatherbit.io](https://www.weatherbit.io) üzerinden alıyoruz. 
 
-Uygulamayı çalıştırmaız içn önce **.env** dosyasını ana dizinde oluşturmanız ve sonrasında **Api Key** bilgisini **.env dosyası** eklenmesi gerekiyor.
+Uygulamayı çalıştırmanız için önce **.env** dosyasını ana dizinde oluşturmanız ve sonrasında **Api Key** bilgisini **.env dosyası** eklenmesi gerekiyor.
 
 ```REACT_APP_END_POINT_API_KEY=sizin_api_key_bilginiz```
 
