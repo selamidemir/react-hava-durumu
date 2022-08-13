@@ -16,7 +16,7 @@ export const CityProvider = ({ children }) => {
 
     useEffect(() => {
         const cityInfo = CITIES.filter((c) => parseInt(c.id) === parseInt(city))
-        let url = `${API_URL}lat=${cityInfo[0].latitude}&lon=${cityInfo[0].longitude}&lang=tr&key=${API_KEY}`;
+        let url = `${API_URL}lat=${cityInfo[0].latitude}&lon=${cityInfo[0].longitude}&lang=tr&key=${process.env.REACT_APP_END_POINT_API_KEY}`;
 
         console.log(url)
         axios(url)
