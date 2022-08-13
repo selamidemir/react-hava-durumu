@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hava Durumu Tahmini",
+  "name": "Türkiye çapında iller bazında 7 günlük havadurumu tahmini uygulaması.",
   "icons": [
     {
       "src": "favicon.ico",

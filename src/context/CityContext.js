@@ -2,7 +2,7 @@ import { useContext, createContext, useState, useEffect } from "react";
 import axios from "axios";
 
 import CITIES from "../assets/cities_of_turkey";
-import { API_URL, API_KEY } from "../assets/constants";
+import { API_URL } from "../assets/constants";
 
 const CityContext = createContext();
 
@@ -16,7 +16,7 @@ export const CityProvider = ({ children }) => {
 
     useEffect(() => {
         const cityInfo = CITIES.filter((c) => parseInt(c.id) === parseInt(city))
-        let url = `${API_URL}lat=${cityInfo[0].latitude}&lon=${cityInfo[0].longitude}&lang=tr&key=${API_KEY}`;
+        let url = `${API_URL}lat=${cityInfo[0].latitude}&lon=${cityInfo[0].longitude}&lang=tr&key=${process.env.REACT_APP_END_POINT_API_KEY}`;
 
         console.log(url)
         axios(url)
